@@ -1,0 +1,181 @@
+html,
+body {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+
+    min-width: 600px;
+    max-width: 900px;
+    margin: 0 auto;
+    background-color: #f5f5f5;
+    font: 16px/150% tahoma,arial,Microsoft YaHei,Hiragino Sans GB,"\u5b8b\u4f53",sans-serif;
+}
+
+audio {
+    display: none;
+}
+
+h1 {
+    text-align: center;
+}
+h2 {
+    padding: 0;
+}
+
+#timerApp {
+    position: relative;
+    background-color: white;
+    padding: 5px;
+}
+
+
+
+#timingDiv {
+    padding-bottom: 10px;
+    font-size: 15px;
+    clear: both;
+
+
+}
+
+
+
+#timingTime {
+    width: 25px;
+    font-size: 15px;
+    border: solid 1px #ededed;
+    text-align: center;
+    margin-right: 2px;
+
+}
+
+
+#timingBtn{
+    font-size: 13px;
+
+}
+
+#tomato-and-ring {
+    position: relative;
+}
+
+
+
+div.title {
+    font-size: 16px;
+    border-top: 1px solid #ededed;
+    padding-top: 20px;
+    margin-bottom: 15px;
+
+}
+#alarm-clock button {
+    font-size: 13px;
+}
+
+#alarm-clock input#ring-time {
+    font-size: 13px;
+}
+
+#alarm-clock #rings div {
+    line-height: 120%;
+}    
+
+#tomatoTimingDiv, 
+#alarm-clock {
+    width: 50%;
+    float: left;
+    padding-top: 20px;
+    padding-bottom: 30px;
+}
+#alarm-clock {
+    float: right;
+}
+
+.tomato {
+    display: inline-block;
+    background-color: #FF0000;
+    border: none;
+    text-align: center;
+    border-radius: 50px;
+    width: 70px;
+    height: 70px;
+    margin-right: 20px;
+    font-size: 15px;
+
+}
+.tomato:hover {
+    background-color: #FF4500;
+}
+.tomato:disabled:hover {
+    background-color:  #FF0000;
+}
+:focus {
+    outline: 0;
+}
+#records,
+#remindMusic {
+    clear: both;
+}
+
+#recordList {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+#recordTitle {
+    margin: 10px 0px 15px;
+    padding-top: 10px; 
+}
+
+#recordList li {
+    padding: 0 8px;
+
+    border-bottom: 1px solid #ededed;
+
+    display: block;
+
+    line-height: 48px;
+
+    font-size: 16px;
+}
+
+#recordList li button.deleteRecordItem:hover {
+    color: red;
+}
+
+#recordList li button.deleteRecordItem {
+    display: inline-block;
+    width: 40px;
+    padding: 5px;
+    margin-right: 10px;
+    border: none;
+    font-size: 14px;
+    background-color: white;
+}
+.descriptionEdit {
+    display: none;
+    font-size: 16px;
+    line-height: 38px;
+}
+
+#recordList li .timespan {
+    display: inline-block;
+    width: 180px;
+}
+#recordList li .totalTime {
+    display: inline-block;
+    width: 98px;
+}
+
+li.listHead label:first-child {
+    display: inline-block;
+    width: 55px;
+}
+
+#dateInput {
+    font-size: 16px;
+    padding: 2px;
+
+}

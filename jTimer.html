@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>计时器</title>
+    <link rel="stylesheet" type="text/css" href="./jTimer.css">
+</head>
+<body>
+
+    <div id="timerApp">
+        <h1>timerlogger</h1>
+        <div id="timingDiv">
+            <div class="title">计时</div>
+            <label for="timingTime">倒计时：<input id="timingTime" type="text" value="45" autofocus="autofocus">分钟</label>
+            <button id="timingBtn">开始</button>
+            <label id="leftTime"></label>
+        </div>
+        <div id="tomato-and-ring">
+            <div id="tomatoTimingDiv">
+                <div class="title">番茄钟</div>
+                <button id="tomatoTime" class="tomato" data-time="25"></button>
+                <button id="tomatoRest" class="tomato" data-time="5"></button>
+            </div>
+            <div id="alarm-clock">
+                <div class="title">闹钟</div>
+                <label for="ring-time">添加新闹钟：</label><input id="ring-time" type="time" value="21:55:00">
+                <button id="add-ring">添加</button>
+                <div class="show-rings">
+                    <div id="rings"></div>
+                </div>
+            </div>
+        </div>
+        <div id="remindMusic">
+            <audio id="mymusic" src="music/ring.mp3" controls="controls">
+                Your browser does not support the audio tag.
+            </audio>
+        </div>
+        <div id="records">
+            <div id="recordTitle" class="title">
+                时间记录：<input id="dateInput" type="date">
+            </div>
+            <ul id="recordList"></ul>
+        </div>
+
+    </div>
+
+    <script src="./js/jquery-1.11.3.min.js"></script>
+    <script src="./js/jquery.jFormatDate.js"></script>
+    <script src="./jTimer.js"></script>
+
+</body>
+</html>
